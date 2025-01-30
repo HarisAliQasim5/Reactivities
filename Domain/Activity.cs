@@ -1,9 +1,12 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace Domain
 {
     public class Activity
     {
         public Guid Id { get; set; }
 
+        [Required]
         public string Title { get; set; }
 
         public DateTime Date { get; set; }
